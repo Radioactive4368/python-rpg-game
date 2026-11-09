@@ -5,18 +5,19 @@ import random
 
 
 class Player:
-    def __init__(self, name, coins, health, damage, level, DEFAULT_VALUES):
+    DEFAULT_VALUES = {
+        "health": 100,
+        "damage": 10,
+        "level": 1,
+        "coins": 50,
+    }
+
+    def __init__(self, name, coins, health, damage, level):
         self.name = name
         self.coins = coins
         self.health = health
         self.damage = damage
         self.level = level
-        self.DEFAULT_VALUES = {
-    "health":100,
-    "damage":10,
-    "level":1,
-    "coins":50
-}
 
     def __str__(self):
         return (f"====================\n"
