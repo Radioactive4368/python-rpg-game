@@ -31,6 +31,9 @@ class Player:
 
 def create_player():
     name = input("Please enter your character's name: ")
-    health, damage, level, coins = Player.DEFAULT_VALUES
+    defaults = Player.DEFAULT_VALUES
+    health, damage, level, coins = (
+        defaults["health"], defaults["damage"], defaults["level"], defaults["coins"]
+    )
 
 
